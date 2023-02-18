@@ -113,7 +113,7 @@ class electron:
                         if fate<=((electron.section1+electron.section3+electron.section4+electron.section5)/electron.section):
                 
                             #发生电离碰撞，导致出现一个电子，初速度为0，在当前位置，且不发生碰撞
-                            electron.v_e=math.sqrt((electron.E_e-15.76*e)/m_e)*np.cos(electron.theta)  
+                            electron.v_e=math.sqrt(2*(electron.E_e-15.76*e)/m_e)*np.cos(electron.theta)  
 
 
                             #判断当前电势，高于反向电压，则允许射出
